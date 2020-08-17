@@ -4,7 +4,6 @@
 <img src="https://raw.githubusercontent.com/CarlosJCdev/Login-React-Firebase/master/src/icons/react1.png">
 </p>
 
-![N|Solid](https://raw.githubusercontent.com/CarlosJCdev/Login-React-Firebase/master/src/icons/react1.png)
 
 - Manejo con useState y con onChange
 - Una alternativa a useState, => useReducer
