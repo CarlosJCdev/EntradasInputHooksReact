@@ -1,17 +1,9 @@
-import React, {useState, useReducer} from 'react';
+import React from 'react';
 import './App.css';
+import ComponenteControlado from './ComponenteControlado';
 
 function App() {
 
-  const [valores, setValores]= useState('');
-  const [valores1, setValores1]= useState('');
-
-  const cambioValores= e =>{
-    setValores(e.target.value);
-  };
-  const cambioValores1= e =>{
-    setValores1(e.target.value);
-  };
 
   return (
     <div className="App">
@@ -22,12 +14,13 @@ function App() {
       </div>
       <br/><hr/>
 
-      <input type="text" placeholder="Name" onChange={cambioValores}  /><br/>
-      <input type="password" placeholder="contraseña" onChange={cambioValores1}  /><br/>
+      <input type="text" placeholder="Name"  /><br/>
+      <input type="password" placeholder="contraseña"  /><br/>
       {/* <button>Enviar</button> */}
       <br/>
 
-
+      <h1>Componente de clase</h1>
+      <ComponenteControlado/>
 
     </div>
   );

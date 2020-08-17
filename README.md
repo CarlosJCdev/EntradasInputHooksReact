@@ -4,13 +4,8 @@
 <img src="https://raw.githubusercontent.com/CarlosJCdev/Login-React-Firebase/master/src/icons/react1.png">
 </p>
 
-![N|Solid](https://raw.githubusercontent.com/CarlosJCdev/Login-React-Firebase/master/src/icons/react1.png)
 
-- Manejo con useState y con onChange
-- Una alternativa a useState, => useReducer
-- useCallback, a la espera del cambio de una dependencia
-
-### Forma mas comun del manejo de entradas
+### Forma mas común del manejo de entradas
 ```javascript
 const [name, setname] = useState('');
 const [password, setpassword] = useState('');
@@ -19,7 +14,7 @@ const [password, setpassword] = useState('');
     <input type="password" placeholder="contraseña" onChange={e => setpassword(e.target.value)} /><br/>
 ```
 
-### manejo de la captura de los datos con función externa
+### Manejo de la captura de los datos con función externa
 ```javascript
   const [valores, setValores]= useState('');
   const [valores1, setValores1]= useState('');
@@ -29,6 +24,21 @@ const [password, setpassword] = useState('');
 
   const cambioValores1= e =>{
     setValores1(e.target.value); };
+
+```
+
+### Manejo de la captura de los datos con componente de clase
+```javascript
+  constructor(props) {
+        super(props)
+        this.state = { value: '' };
+        this.Cambios = this.Cambios.bind(this);
+    }
+    Cambios(e) {
+        this.setState({ value: e.target.value });
+    }
+     <input type="text" value={this.state.value} onChange={this.Cambios} />
+     <p>{this.state.value}</p>
 
 ```
 
