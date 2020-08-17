@@ -5,6 +5,10 @@
 </p>
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 651d0882cb1013c1326995b6b19cb9badffc2535
 ### Forma mas común del manejo de entradas
 ```javascript
 const [name, setname] = useState('');
