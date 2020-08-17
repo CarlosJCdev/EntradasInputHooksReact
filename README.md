@@ -5,11 +5,8 @@
 </p>
 
 
-- Manejo con useState y con onChange
-- Una alternativa a useState, => useReducer
-- useCallback, a la espera del cambio de una dependencia
 
-### Forma mas comun del manejo de entradas
+### Forma mas común del manejo de entradas
 ```javascript
 const [name, setname] = useState('');
 const [password, setpassword] = useState('');
